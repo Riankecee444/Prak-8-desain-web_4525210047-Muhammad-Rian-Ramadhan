@@ -1,0 +1,319 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9eef7;
+    color: #26334d;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    border: 2px solid #26334d;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #263f79;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed #777;
+    border-radius: 7px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.choice {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.choice label {
+    font-weight: normal;
+}
+
+.agreement {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal !important;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #3156d3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #203eaa;
+}
+
+small {
+    display: block;
+    color: #777;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .form-card {
+        padding: 22px 17px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .choice {
+        gap: 12px;
+    }
+}
+/* HALAMAN PENDAFTARAN BERHASIL */
+.success-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.success-card {
+    background: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 40px 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #16a34a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.success-card h1 {
+    color: #0f172a;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.success-description {
+    color: #64748b;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.data-peserta {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.data-peserta p {
+    color: #334155;
+    margin: 12px 0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.data-peserta strong {
+    color: #0f172a;
+}
+
+.btn-kembali {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+    .success-card {
+        padding: 30px 20px;
+    }
+
+    .success-card h1 {
+        font-size: 23px;
+    }
+}
+/* HALAMAN PENDAFTARAN BERHASIL */
+.success-page {
+    min-height: 100vh;
+    background: #e9eff9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.success-card {
+    width: 100%;
+    max-width: 875px;
+    background: white;
+    border: 2px solid #293953;
+    border-radius: 18px;
+    padding: 40px 45px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    background: #e2f5e9;
+    color: #198754;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.success-card h1 {
+    text-align: center;
+    color: #244783;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.success-description {
+    text-align: center;
+    color: #777;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.data-peserta {
+    background: #f5f7fc;
+    border: 1px solid #d5dce8;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+}
+
+.data-peserta p {
+    color: #293953;
+    font-size: 16px;
+    margin: 13px 0;
+    overflow-wrap: anywhere;
+}
+
+.data-peserta strong {
+    color: #244783;
+}
+
+.btn-kembali {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: #3155d9;
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background: #2444bd;
+}
+
+@media (max-width: 600px) {
+    .success-card {
+        padding: 30px 20px;
+    }
+
+    .success-card h1 {
+        font-size: 27px;
+    }
+
+    .success-description {
+        font-size: 15px;
+    }
+}

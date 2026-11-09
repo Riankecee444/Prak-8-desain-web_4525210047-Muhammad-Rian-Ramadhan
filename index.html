@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-card">
+
+        <h1>Registrasi Event Cyber Security</h1>
+        <p class="subtitle">Silakan isi formulir untuk mengikuti event kami.</p>
+
+        <form action="proses.php" method="POST" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" name="nama" required minlength="3"
+                       placeholder="Masukkan nama lengkap">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required
+                       placeholder="nama@email.com">
+            </div>
+
+            <div class="form-group">
+                <label>Nomor Telepon</label>
+                <input type="tel" name="telepon" required
+                       pattern="08[0-9]{8,11}"
+                       placeholder="08xxxxxxxxxx">
+            </div>
+
+            <div class="form-group">
+                <label>Kategori Peserta</label>
+                <select name="kategori" required>
+                    <option value="">-- Pilih Kategori --</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Pelajar">Pelajar</option>
+                    <option value="Umum">Umum</option>
+                    <option value="Profesional">Profesional</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Tiket</label>
+
+                <div class="choice">
+                    <label><input type="radio" name="tiket" value="Reguler" required> Reguler</label>
+                    <label><input type="radio" name="tiket" value="VIP"> VIP</label>
+                    <label><input type="radio" name="tiket" value="Online"> Online</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Alasan Mengikuti Event</label>
+                <textarea name="alasan" rows="4" maxlength="500"
+                          placeholder="Tuliskan alasan mengikuti event..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Bukti Identitas *</label>
+                <input type="file" name="bukti" accept=".jpg,.jpeg,.png,.pdf" required>
+                <small>Format JPG, PNG, atau PDF. Maksimal 2 MB.</small>
+            </div>
+
+            <div class="form-group">
+                <label class="agreement">
+                    <input type="checkbox" name="setuju" value="1" required>
+                    Saya menyetujui syarat dan ketentuan.
+                </label>
+            </div>
+
+            <button type="submit">Kirim Pendaftaran</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
